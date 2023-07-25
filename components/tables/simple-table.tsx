@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useTable } from "react-table";
-import Data from "./data.json";
-import { COLUMNS, GROUPED_COLUMNS } from "./columns";
+import Data from "../data.json";
+import { COLUMNS, GROUPED_COLUMNS } from "../columns";
 
 export default function SimpleTable() {
   const columns = useMemo(() => COLUMNS, []);

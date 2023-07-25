@@ -1,13 +1,7 @@
 import { useMemo } from "react";
-import {
-  useTable,
-  useSortBy,
-  UseSortByHooks,
-  HeaderGroup,
-  UseSortByColumnProps,
-} from "react-table";
-import Data from "./data.json";
-import { COLUMNS, GROUPED_COLUMNS } from "./columns";
+import { useTable, useSortBy, HeaderGroup } from "react-table";
+import Data from "../data.json";
+import { COLUMNS } from "../columns";
 import Image from "next/image";
 
 export default function SortTable() {
@@ -29,9 +23,8 @@ export default function SortTable() {
                 >
                   <div className="flex items-center gap-3">
                     {column.render("Header")}
-
                     <span>
-                      {column.isSorted | column.isSortedDesc ? (
+                      {column.isSorted || column.isSortedDesc ? (
                         <span>
                           <Image
                             width={16}

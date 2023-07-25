@@ -1,4 +1,5 @@
 import { Column } from "react-table";
+
 export const COLUMNS: Column<{
   id: number;
   first_name: string;
@@ -42,16 +43,6 @@ export const COLUMNS: Column<{
 ];
 
 type DataItem = {
-  id: number;
-  first_name: string;
-  last_name: string;
-  email: string;
-  date_of_birth: string;
-  age: number;
-  country: string;
-  phone: string;
-};
-type DataItemms = {
   id: number;
   first_name: string;
   last_name: string;
