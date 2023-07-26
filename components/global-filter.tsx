@@ -10,9 +10,10 @@ const Gfilter: React.FC<GfilterProps> = ({ filter, setFilter }) => {
     <div>
       <span>
         <input
-          className="border-2 border-red-400 px-2 py-4 w-[700px] rounded-3xl outline-none"
+          className="border-2 border-red-400 px-8 py-4 w-[700px] rounded-3xl outline-none"
           type="text"
           value={filter || ""}
+          placeholder="search....."
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setFilter(e.target.value)
           }

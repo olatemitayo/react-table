@@ -4,12 +4,6 @@ import Data from "../data.json";
 import { COLUMNS } from "../columns";
 import Gfilter from "../global-filter";
 
-type DataItem = {
-  id: number;
-  first_name: string;
-  last_name: string;
-};
-
 export default function GlobalFilter() {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => Data, []);
